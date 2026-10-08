@@ -34,12 +34,12 @@ android {
             }
         }
         // Release signing from the environment (CI secrets); unsigned release otherwise.
-        if (System.getenv("CARHOME_KEYSTORE")) {
+        if (System.getenv("KABINA_KEYSTORE")) {
             release {
-                storeFile file(System.getenv("CARHOME_KEYSTORE"))
-                storePassword System.getenv("CARHOME_KEYSTORE_PASSWORD")
-                keyAlias System.getenv("CARHOME_KEY_ALIAS")
-                keyPassword System.getenv("CARHOME_KEY_PASSWORD")
+                storeFile file(System.getenv("KABINA_KEYSTORE"))
+                storePassword System.getenv("KABINA_KEYSTORE_PASSWORD")
+                keyAlias System.getenv("KABINA_KEY_ALIAS")
+                keyPassword System.getenv("KABINA_KEY_PASSWORD")
             }
         }
     }
@@ -47,7 +47,7 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            if (System.getenv("CARHOME_KEYSTORE")) signingConfig signingConfigs.release
+            if (System.getenv("KABINA_KEYSTORE")) signingConfig signingConfigs.release
         }
     }
 

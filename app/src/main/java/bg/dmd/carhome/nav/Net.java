@@ -63,7 +63,7 @@ public final class Net {
         if (c instanceof HttpsURLConnection && factory != null) ((HttpsURLConnection) c).setSSLSocketFactory(factory);
         c.setConnectTimeout(8000);
         c.setReadTimeout(12000);
-        c.setRequestProperty("User-Agent", "CarHome/1.0 (open-source car display)");
+        c.setRequestProperty("User-Agent", "Kabina/1.0 (open-source car display)");
         return c;
     }
 

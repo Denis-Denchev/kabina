@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Brand packs (brands/<name>/res/values/brand.xml) may override app_name, model_credit and color_names. -->
-    <string name="app_name" translatable="false">CarHome</string>
+    <string name="app_name" translatable="false">Kabina</string>
     <string name="model_credit" translatable="false"></string>
     <!-- GPL-3.0 section 7(b) attribution: must be kept in every copy and derivative. -->
     <string name="author_credit" translatable="false">Created by Denis Denchev · GPL-3.0</string>

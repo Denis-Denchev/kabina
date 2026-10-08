@@ -1,8 +1,10 @@
-# CarHome
+# Kabina
 
 **Turn any Android tablet into a factory-looking car screen.**
 
-CarHome is a home-screen (launcher) app for a tablet mounted in your dashboard: big clock and speed,
+*Kabina* (кабина) is Bulgarian for "cabin" — the cockpit of your car.
+
+Kabina is a home-screen (launcher) app for a tablet mounted in your dashboard: big clock and speed,
 one-tap tiles for navigation, music and video, live engine data over a cheap Bluetooth OBD-II adapter,
 control of Bluetooth ambient LED strips, and a day/night look that follows the sun.
 
@@ -47,7 +49,7 @@ GPS, Bluetooth and the light sensor are optional — Wi-Fi-only tablets work, th
 ## Install
 
 1. Download the APK from [Releases](../../releases) and install it.
-2. Press Home and choose **CarHome**, *Always*.
+2. Press Home and choose **Kabina**, *Always*.
 3. Allow **location** and **Bluetooth** when asked.
 4. Pair your OBD adapter in Android's Bluetooth settings (PIN is usually `1234`). The LED strip is found automatically.
 
@@ -81,8 +83,8 @@ Needs JDK 17 and the Android SDK (`ANDROID_HOME` or `local.properties`).
 ./gradlew assembleBrandedDebug -Pbrand=mycar     # with brands/mycar overlaid
 ```
 
-Release builds are signed when `CARHOME_KEYSTORE`, `CARHOME_KEYSTORE_PASSWORD`, `CARHOME_KEY_ALIAS` and
-`CARHOME_KEY_PASSWORD` are set. GitHub Actions builds an APK on every push and attaches it to tagged releases.
+Release builds are signed when `KABINA_KEYSTORE`, `KABINA_KEYSTORE_PASSWORD`, `KABINA_KEY_ALIAS` and
+`KABINA_KEY_PASSWORD` are set. GitHub Actions builds an APK on every push and attaches it to tagged releases.
 
 ## Brand packs
 

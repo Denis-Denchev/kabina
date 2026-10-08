@@ -1,6 +1,6 @@
 # Brand packs
 
-A brand pack makes CarHome look like it belongs to *your* car: the maker's logo on the intro and the
+A brand pack makes Kabina look like it belongs to *your* car: the maker's logo on the intro and the
 home screen, a 3D model of your car on the Vehicle screen, a photo of your cabin on the Lighting screen.
 
 Brand packs live in `brands/<name>/` and are **git-ignored** — car makers' names, logos and photos are
