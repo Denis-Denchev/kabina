@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Home -->
+    <string name="tile_nav">Навигация</string>
+    <string name="tile_music">Музика</string>
+    <string name="tile_video">YouTube</string>
+    <string name="tile_car">Автомобил</string>
+    <string name="tile_lights">Осветление</string>
+    <string name="tile_carplay">CarPlay</string>
+    <string name="speed_kmh">%d km/h</string>
+    <string name="speed_none">— km/h</string>
+    <string name="rpm_value">%d об/мин</string>
+    <string name="rpm_none">об/мин —</string>
+    <string name="app_not_installed">Приложението не е инсталирано</string>
+    <string name="cannot_open">Не може да се отвори</string>
+    <string name="no_internet">Няма интернет</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="gps_off">GPS изключен</string>
+    <string name="theme_auto">АВТО</string>
+    <string name="theme_day">ДЕН</string>
+    <string name="theme_night">НОЩ</string>
+    <string name="goodbye">ДОВИЖДАНЕ</string>
+    <string name="perm_needed">Разреши местоположение и Bluetooth, за да работят скоростта, навигацията и връзката с колата.</string>
+
+    <!-- All apps / service mode -->
+    <string name="all_apps">ВСИЧКИ ПРИЛОЖЕНИЯ</string>
+    <string name="service_back_title">Обратно в режим кола?</string>
+    <string name="service_title">Сервизен режим?</string>
+    <string name="service_back_msg">Менютата на Android отново ще се скрият.</string>
+    <string name="service_msg">Менютата на Android ще се покажат, докато не върнете режим кола оттук.</string>
+    <string name="yes">Да</string>
+    <string name="cancel">Отказ</string>
+    <string name="save">Запази</string>
+
+    <!-- Vehicle -->
+    <string name="car_title">АВТОМОБИЛ</string>
+    <string name="dtc_hint">Грешки: натисни „Провери“</string>
+    <string name="dtc_check">Провери</string>
+    <string name="dtc_clear">Изтрий</string>
+    <string name="dtc_reading">Чета грешките…</string>
+    <string name="dtc_none">Няма записани грешки ✓</string>
+    <string name="dtc_clear_title">Изтриване на грешките?</string>
+    <string name="dtc_clear_msg">Ще изгасне лампата „Check engine“ и ще се нулират данните за готовност. Ако проблемът е реален, грешката ще се върне.</string>
+    <string name="dtc_cleared">Грешките са изтрити</string>
+    <string name="throttle">газ %d%%</string>
+    <string name="callout_engine">ДВИГАТЕЛ</string>
+    <string name="callout_battery">АКУМУЛАТОР</string>
+    <string name="callout_intake">ВСМУКАН ВЪЗДУХ</string>
+    <string name="callout_load">НАТОВАРВАНЕ</string>
+    <string name="callout_fuel">ГОРИВО</string>
+
+    <!-- Trouble-code families -->
+    <string name="dtc_network">комуникация между модулите</string>
+    <string name="dtc_body">купе / комфорт</string>
+    <string name="dtc_chassis">шаси (ABS, окачване)</string>
+    <string name="dtc_maker">специфична за производителя</string>
+    <string name="dtc_fuel">гориво / въздух</string>
+    <string name="dtc_ignition">запалване / прекъсвания</string>
+    <string name="dtc_emissions">емисии (EGR, DPF, катализатор)</string>
+    <string name="dtc_idle">обороти / празен ход</string>
+    <string name="dtc_ecu">компютър / изходи</string>
+    <string name="dtc_transmission">скоростна кутия</string>
+
+    <!-- Car link status -->
+    <string name="link_not_connected">Не е свързано</string>
+    <string name="link_no_bt">Няма Bluetooth</string>
+    <string name="link_bt_off">Bluetooth е изключен</string>
+    <string name="link_bt_permission">Нужно е разрешение за Bluetooth</string>
+    <string name="link_car_off">Колата е изключена</string>
+    <string name="link_off">Изключено</string>
+    <string name="link_connecting">Свързване с %s…</string>
+    <string name="link_connected">Свързано</string>
+    <string name="obd_searching">Търся OBD…</string>
+    <string name="obd_pair">Сдвои OBD адаптера (PIN 1234)</string>
+    <string name="obd_not_connected">OBD не е свързан</string>
+    <string name="obd_no_link">Няма връзка с OBD</string>
+    <string name="obd_refused">Колата отказа (пуснат ли е двигателят? Трябва само запалване)</string>
+    <string name="led_searching">Търся LED лентата…</string>
+    <string name="led_the_strip">лентата</string>
+    <string name="led_out_of_range">Лентата е извън обхват</string>
+    <string name="led_unknown">Непознат LED контролер</string>
+    <string name="led_connected">Свързано: %s</string>
+
+    <!-- Lighting -->
+    <string name="lights_title">АМБИЕНТНО ОСВЕТЛЕНИЕ</string>
+    <string name="colors">ЦВЕТОВЕ</string>
+    <string name="your_color">ТВОЙ ЦВЯТ</string>
+    <string name="brightness">ЯРКОСТ</string>
+    <string name="effect">ЕФЕКТ</string>
+    <string name="turn_on">Включи</string>
+    <string name="turn_off">Изключи</string>
+    <string name="ring_on">ВКЛ.</string>
+    <string name="ring_off">ИЗКЛ.</string>
+    <string name="aurora_sub">плавно преливане на цветове</string>
+    <string name="revs_sub">цветът следва оборотите</string>
+    <string name="led_off_sub">изключено</string>
+    <string-array name="effects">
+        <item>Статично</item>
+        <item>Дишане</item>
+        <item>Пулс</item>
+        <item>Aurora Show</item>
+        <item>Обороти</item>
+    </string-array>
+    <string-array name="color_subs">
+        <item>дълбоко океанско синьо</item>
+        <item>ледено бяло</item>
+        <item>рубинено червено</item>
+        <item>огнено оранжево</item>
+        <item>топло злато</item>
+        <item>космическо лилаво</item>
+        <item>северно сияние</item>
+        <item>неоново розово</item>
+    </string-array>
+
+    <!-- Navigation -->
+    <string name="nav_where">Къде отиваме?</string>
+    <string name="nav_recenter">Центрирай</string>
+    <string name="nav_end">Край</string>
+    <string name="nav_go">Тръгваме</string>
+    <string name="nav_hint">Адрес, място или обект</string>
+    <string name="nav_search">Търси</string>
+    <string name="nav_recent">ПОСЛЕДНИ</string>
+    <string name="nav_searching">ТЪРСЯ…</string>
+    <string name="nav_no_results">НЯМА РЕЗУЛТАТИ</string>
+    <string name="nav_error">Грешка: %s</string>
+    <string name="nav_no_key">НЯМА GOOGLE API КЛЮЧ — НАТИСНИ ЗА ДОБАВЯНЕ</string>
+    <string name="nav_waiting_gps">Чакам GPS сигнал…</string>
+    <string name="nav_routing">Изчислявам маршрут…</string>
+    <string name="nav_arrive">пристигане %s</string>
+    <string name="nav_rerouting">Преизчислявам маршрута</string>
+    <string name="nav_arrived">Пристигнахте</string>
+    <string name="nav_in">След %1$s, %2$s</string>
+    <string name="nav_no_route">Няма намерен маршрут</string>
+    <string name="key_title">Google Maps API ключ</string>
+    <string name="key_msg">Включи Places API (New), Routes API и Map Tiles API за този ключ в Google Cloud Console.</string>
+    <string name="dist_now">сега</string>
+    <string name="dist_m">%d м</string>
+    <string name="dist_km">%s км</string>
+    <string name="dist_m_spoken">%d метра</string>
+    <string name="dist_km_spoken">%s километра</string>
+    <string name="dur_min">%d мин</string>
+    <string name="dur_h_min">%1$d ч %2$d мин</string>
+</resources>

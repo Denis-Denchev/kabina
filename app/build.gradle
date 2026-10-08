@@ -1,0 +1,73 @@
+plugins {
+    id "com.android.application"
+}
+
+// Optional brand pack: ./gradlew assembleDebug -Pbrand=<name>  ->  brands/<name>/{res,assets}
+// overlays the neutral defaults (logo, wordmark, launcher icon, app name, 3D model, cabin photo...).
+def brand = (findProperty("brand") ?: "").toString().trim()
+
+// Google Maps Platform key: apikey.txt in the project root, or -PmapsKey=..., or entered in the app.
+def keyFile = rootProject.file("apikey.txt")
+def mapsKey = (findProperty("mapsKey") ?: (keyFile.exists() ? keyFile.text : "")).toString().trim()
+
+android {
+    namespace "bg.dmd.carhome"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "bg.dmd.carhome"
+        minSdk 21
+        targetSdk 34
+        versionCode 2
+        versionName "2.0.0"
+        resValue "string", "maps_key", mapsKey
+    }
+
+    signingConfigs {
+        // A local debug.keystore (gitignored) keeps updates installable over an existing build.
+        if (rootProject.file("debug.keystore").exists()) {
+            debug {
+                storeFile rootProject.file("debug.keystore")
+                storePassword "android"
+                keyAlias "carhome"
+                keyPassword "android"
+            }
+        }
+        // Release signing from the environment (CI secrets); unsigned release otherwise.
+        if (System.getenv("CARHOME_KEYSTORE")) {
+            release {
+                storeFile file(System.getenv("CARHOME_KEYSTORE"))
+                storePassword System.getenv("CARHOME_KEYSTORE_PASSWORD")
+                keyAlias System.getenv("CARHOME_KEY_ALIAS")
+                keyPassword System.getenv("CARHOME_KEY_PASSWORD")
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            if (System.getenv("CARHOME_KEYSTORE")) signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    if (brand) {
+        def dir = rootProject.file("brands/" + brand)
+        if (!dir.isDirectory()) throw new GradleException("Brand pack not found: " + dir)
+        flavorDimensions "brand"
+        productFlavors {
+            branded { dimension "brand" }
+        }
+        sourceSets.branded.res.srcDirs = [new File(dir, "res")]
+        sourceSets.branded.assets.srcDirs = [new File(dir, "assets")]
+    }
+
+    lint {
+        abortOnError false
+    }
+}

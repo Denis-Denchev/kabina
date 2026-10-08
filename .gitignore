@@ -1,0 +1,17 @@
+# secrets / signing
+apikey.txt
+*.keystore
+*.jks
+
+# private brand packs (trademarked logos, licensed photos, personal models)
+brands/*
+!brands/README.md
+!brands/example/
+
+# build output
+build/
+.gradle/
+local.properties
+.idea/
+*.iml
+.DS_Store

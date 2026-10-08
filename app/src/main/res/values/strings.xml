@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand packs (brands/<name>/res/values/brand.xml) may override app_name, model_credit and color_names. -->
+    <string name="app_name" translatable="false">CarHome</string>
+    <string name="model_credit" translatable="false"></string>
+    <!-- GPL-3.0 section 7(b) attribution: must be kept in every copy and derivative. -->
+    <string name="author_credit" translatable="false">Created by Denis Denchev · GPL-3.0</string>
+
+    <!-- Home -->
+    <string name="tile_nav">Navigation</string>
+    <string name="tile_music">Music</string>
+    <string name="tile_video">YouTube</string>
+    <string name="tile_car">Vehicle</string>
+    <string name="tile_lights">Lighting</string>
+    <string name="tile_carplay">CarPlay</string>
+    <string name="speed_kmh">%d km/h</string>
+    <string name="speed_none">— km/h</string>
+    <string name="rpm_value">%d rpm</string>
+    <string name="rpm_none">rpm —</string>
+    <string name="app_not_installed">App not installed</string>
+    <string name="cannot_open">Can\'t open</string>
+    <string name="no_internet">No internet</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="gps_off">GPS off</string>
+    <string name="theme_auto">AUTO</string>
+    <string name="theme_day">DAY</string>
+    <string name="theme_night">NIGHT</string>
+    <string name="goodbye">GOODBYE</string>
+    <string name="perm_needed">Allow location and Bluetooth so speed, navigation and the car link can work.</string>
+
+    <!-- All apps / service mode -->
+    <string name="all_apps">ALL APPS</string>
+    <string name="service_back_title">Back to car mode?</string>
+    <string name="service_title">Service mode?</string>
+    <string name="service_back_msg">Android\'s menus will be hidden again.</string>
+    <string name="service_msg">Android\'s menus will be shown until you switch car mode back on here.</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+
+    <!-- Vehicle -->
+    <string name="car_title">VEHICLE</string>
+    <string name="dtc_hint">Trouble codes: tap “Check”</string>
+    <string name="dtc_check">Check</string>
+    <string name="dtc_clear">Clear</string>
+    <string name="dtc_reading">Reading trouble codes…</string>
+    <string name="dtc_none">No stored trouble codes ✓</string>
+    <string name="dtc_clear_title">Clear trouble codes?</string>
+    <string name="dtc_clear_msg">The check-engine light will go out and the readiness monitors will reset. If the fault is real, the code will come back.</string>
+    <string name="dtc_cleared">Trouble codes cleared</string>
+    <string name="throttle">throttle %d%%</string>
+    <string name="callout_engine">ENGINE</string>
+    <string name="callout_battery">BATTERY</string>
+    <string name="callout_intake">INTAKE AIR</string>
+    <string name="callout_load">ENGINE LOAD</string>
+    <string name="callout_fuel">FUEL</string>
+
+    <!-- Trouble-code families (exact meanings vary by maker) -->
+    <string name="dtc_network">network communication</string>
+    <string name="dtc_body">body / comfort</string>
+    <string name="dtc_chassis">chassis (ABS, suspension)</string>
+    <string name="dtc_maker">manufacturer-specific</string>
+    <string name="dtc_fuel">fuel / air</string>
+    <string name="dtc_ignition">ignition / misfire</string>
+    <string name="dtc_emissions">emissions (EGR, DPF, catalyst)</string>
+    <string name="dtc_idle">speed / idle control</string>
+    <string name="dtc_ecu">computer / outputs</string>
+    <string name="dtc_transmission">transmission</string>
+
+    <!-- Car link status -->
+    <string name="link_not_connected">Not connected</string>
+    <string name="link_no_bt">No Bluetooth</string>
+    <string name="link_bt_off">Bluetooth is off</string>
+    <string name="link_bt_permission">Bluetooth permission needed</string>
+    <string name="link_car_off">Car is off</string>
+    <string name="link_off">Off</string>
+    <string name="link_connecting">Connecting to %s…</string>
+    <string name="link_connected">Connected</string>
+    <string name="obd_searching">Looking for OBD…</string>
+    <string name="obd_pair">Pair the OBD adapter (PIN 1234)</string>
+    <string name="obd_not_connected">OBD not connected</string>
+    <string name="obd_no_link">No connection to OBD</string>
+    <string name="obd_refused">The car refused (engine running? Use ignition only)</string>
+    <string name="led_searching">Looking for the LED strip…</string>
+    <string name="led_the_strip">the strip</string>
+    <string name="led_out_of_range">Strip out of range</string>
+    <string name="led_unknown">Unknown LED controller</string>
+    <string name="led_connected">Connected: %s</string>
+
+    <!-- Lighting -->
+    <string name="lights_title">AMBIENT LIGHTING</string>
+    <string name="colors">COLORS</string>
+    <string name="your_color">YOUR COLOR</string>
+    <string name="brightness">BRIGHTNESS</string>
+    <string name="effect">EFFECT</string>
+    <string name="turn_on">Turn on</string>
+    <string name="turn_off">Turn off</string>
+    <string name="ring_on">ON</string>
+    <string name="ring_off">OFF</string>
+    <string name="aurora_title" translatable="false">AURORA SHOW</string>
+    <string name="aurora_sub">smoothly flowing colors</string>
+    <string name="revs_title" translatable="false">REV MODE</string>
+    <string name="revs_sub">color follows the revs</string>
+    <string name="custom_color" translatable="false">CUSTOM</string>
+    <string name="led_off_sub">off</string>
+    <string-array name="effects">
+        <item>Static</item>
+        <item>Breathe</item>
+        <item>Pulse</item>
+        <item>Aurora Show</item>
+        <item>Revs</item>
+    </string-array>
+    <string-array name="color_names" translatable="false">
+        <item>OCEAN</item>
+        <item>ICE</item>
+        <item>RUBY</item>
+        <item>EMBER</item>
+        <item>SAHARA</item>
+        <item>NEBULA</item>
+        <item>AURORA</item>
+        <item>NEON ROSE</item>
+    </string-array>
+    <string-array name="color_subs">
+        <item>deep ocean blue</item>
+        <item>icy white</item>
+        <item>ruby red</item>
+        <item>fiery orange</item>
+        <item>warm gold</item>
+        <item>cosmic purple</item>
+        <item>northern lights</item>
+        <item>neon pink</item>
+    </string-array>
+
+    <!-- Navigation -->
+    <string name="nav_where">Where to?</string>
+    <string name="nav_recenter">Re-center</string>
+    <string name="nav_end">End</string>
+    <string name="nav_go">Go</string>
+    <string name="nav_hint">Address, place or business</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_recent">RECENT</string>
+    <string name="nav_searching">SEARCHING…</string>
+    <string name="nav_no_results">NO RESULTS</string>
+    <string name="nav_error">Error: %s</string>
+    <string name="nav_no_key">NO GOOGLE API KEY — TAP TO ADD ONE</string>
+    <string name="nav_waiting_gps">Waiting for GPS…</string>
+    <string name="nav_routing">Calculating route…</string>
+    <string name="nav_arrive">arrive %s</string>
+    <string name="nav_rerouting">Recalculating route</string>
+    <string name="nav_arrived">You have arrived</string>
+    <string name="nav_in">In %1$s, %2$s</string>
+    <string name="nav_no_route">No route found</string>
+    <string name="key_title">Google Maps API key</string>
+    <string name="key_msg">Enable Places API (New), Routes API and Map Tiles API for this key in Google Cloud Console.</string>
+    <string name="dist_now">now</string>
+    <string name="dist_m">%d m</string>
+    <string name="dist_km">%s km</string>
+    <string name="dist_m_spoken">%d meters</string>
+    <string name="dist_km_spoken">%s kilometers</string>
+    <string name="dur_min">%d min</string>
+    <string name="dur_h_min">%1$d h %2$d min</string>
+</resources>
