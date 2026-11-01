@@ -21,7 +21,9 @@ public class ShadeBlocker extends Service {
         strip.setOnTouchListener(new View.OnTouchListener() {
             @Override public boolean onTouch(View v, MotionEvent e) { return true; }
         });
-        int h = Math.round(48 * getResources().getDisplayMetrics().density);
+        // Exactly the status bar's height: any taller and it swallows taps on every app's toolbar.
+        int id = getResources().getIdentifier("status_bar_height", "dimen", "android");
+        int h = id > 0 ? getResources().getDimensionPixelSize(id) : Math.round(24 * getResources().getDisplayMetrics().density);
         @SuppressWarnings("deprecation")
         WindowManager.LayoutParams lp = new WindowManager.LayoutParams(
                 WindowManager.LayoutParams.MATCH_PARENT, h,
