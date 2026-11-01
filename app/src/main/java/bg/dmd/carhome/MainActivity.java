@@ -376,7 +376,9 @@ public class MainActivity extends Activity implements LocationListener {
     enum Target { NAV, CARPLAY, VIDEO, MUSIC, CAR, LIGHTS }
 
     private static final String[] NAV_PKGS = {"com.waze", "com.google.android.apps.maps", "net.osmand.plus", "net.osmand", "com.sygic.aura", "com.mapswithme.maps.pro", "app.organicmaps"};
-    private static final String[] VIDEO_PKGS = {"com.google.android.youtube", "org.schabi.newpipe", "com.teamsmart.videomanager.tv"};
+    // Lightweight clients first: on old tablets the official app no longer runs, and whoever installed one prefers it.
+    private static final String[] VIDEO_PKGS = {"org.schabi.newpipe", "InfinityLoop1309.NewPipeEnhanced", "org.smarttube.stable",
+            "org.smarttube.beta", "com.teamsmart.videomanager.tv", "com.google.android.youtube"};
     private static final String[] MUSIC_PKGS = {"com.spotify.music", "com.google.android.apps.youtube.music", "deezer.android.app", "com.soundcloud.android"};
     private static final String[] CARPLAY_WORDS = {"autokit", "carplay", "zlink", "carlink"};
 
